@@ -11,7 +11,7 @@ driver = webdriver.Chrome(service=service,  options=options)
 driver.get("https://www.google.com.hk/search?q=TV+%E3%82%A2%E3%83%8B%E3%83%A1++imagesize:{resolution}x1024+-eeo.today&tbm=isch&start={page*20}&sa=N&lite=0&source=lnms&tbm=isch&sa=X&ei=XosDVaCXD8TasATItgE&ved=0CAcQ_AUoAg")
 
 # 等待网页加载
-#time.sleep(5)
+time.sleep(5)
 
 # 获取cookie字符串
 cookies = driver.get_cookies()
