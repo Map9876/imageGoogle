@@ -1,9 +1,8 @@
 from selenium import webdriver
 
-# webdriver.Chrome?
+driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')
+driver.get("https://www.google.com")
+driver.quit()
 
-browser = webdriver.Chrome()#executable_path = '/opt/anaconda3/bin/chromedriver')
-browser.get("http://music.163.com") 
-#print(browser.page_source)
 print('i am fine!')
-browser.close() 
+driver.close() 
