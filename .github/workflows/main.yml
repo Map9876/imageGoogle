@@ -24,8 +24,6 @@ jobs:
           python-version: '3.x'
       - name: set chromedriver
         uses: nanasess/setup-chromedriver@v2
-        with: 
-          chromedriver-version: '117.0.5938.92'
       - name: start browser
 
         run: |
