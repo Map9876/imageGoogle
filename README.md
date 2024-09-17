@@ -3308,7 +3308,7 @@ qiita.com › [Python+Seleniumで Chromeデベロッパーツールの Network�
 
 比如`竖版`海报我看到这个是en
 ，但是我搜jp的页面里面也有这张jpg链接
-，同时他也在 global.edge.bamgrid.com/svc/content/DmcSeriesBundle/version/5.1/region/JP/audience/false/maturity/1850/language/zh-Hans/encodedSeriesId/1rlaH8IM0pkQ
+，同时他也在 https://content.global.edge.bamgrid.com/svc/content/DmcSeriesBundle/version/5.1/region/JP/audience/false/maturity/1850/language/zh-Hans/encodedSeriesId/1rlaH8IM0pkQ
 的
 
 ```
