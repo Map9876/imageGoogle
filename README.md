@@ -634,10 +634,10 @@ qiita.com › [Python+Seleniumで Chromeデベロッパーツールの Network�
 
 获取图片 ：
 `https://www.disneyplus.com/zh-hans/series/big-mouth/7kIy3S1m2HNY`对应
-`https://content.global.edge.bamgrid.com/svc/content/DmcSeriesBundle/version/3.3/region/GB/audience/false/maturity/1450/language/en-GB/encodedSeriesId/3RUQKboZV3FF`
+`https://disney.content.edge.bamgrid.com/svc/content/DmcSeriesBundle/version/5.1/region/SG/audience/false/maturity/1850/language/zh-Hans/encodedSeriesId/7kIy3S1m2HNY`
 
 注意region/GB 的地区GB需要改，比如对于
- https://www.disneyplus.com/en-jp/series/frieren-beyond-journeys-end/1rlaH8IM0pkQ 就是 JP，这些链接直接在浏览器搜到
+ https://www.disneyplus.com/en-jp/series/frieren-beyond-journeys-end/1rlaH8IM0pkQ 就是 JP，这些链接直接在浏览器搜到，而1rlaH8IM0pkQ这个id，同一部，不同地区都完全一样
 
 ```
 !apt install jq
