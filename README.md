@@ -3304,7 +3304,18 @@ qiita.com › [Python+Seleniumで Chromeデベロッパーツールの Network�
  ```
 </details>
 
-注意地区不同id相同，而且一个地区的图片，在另外一个地区的网页html里也有，html都一样
+注意地区不同id相同，而且一个地区的图片，在另外一个地区的网页html里也有，html都一样。
+
+比如`竖版`海报我看到这个是en
+，但是我搜jp的页面里面也有这张jpg链接
+，同时他也在 global.edge.bamgrid.com/svc/content/DmcSeriesBundle/version/5.1/region/JP/audience/false/maturity/1850/language/zh-Hans/encodedSeriesId/1rlaH8IM0pkQ
+的
+"masterWidth": 2000,
+"masterHeight": 2818,
+"url": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/77CC1FC69866834FEE4B724A07A163CA65825CB75736BD3589AF6FDA2B6A74EA" 
+位置
+
+
 参考： 
 The Movie Database (TMDB)
 https://www.themoviedb.org ›
