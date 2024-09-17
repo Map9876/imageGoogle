@@ -6,6 +6,6 @@ curl -s "$URL" | exiftool -fast -
 chmod +x /data/data/com.termux/ok.sh
 
 
-echo 'alias e='/data/data/com.termux/ok/ok.sh'
-' > ~/.bashrc
+echo "alias e='/data/data/com.termux/ok/ok.sh'
+" > ~/.bashrc
 source ~/.bashrc
