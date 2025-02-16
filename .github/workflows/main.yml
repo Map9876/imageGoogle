@@ -32,7 +32,7 @@ jobs:
         run: |
           sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           sudo apt update
-          sudo apt-get install -y google-chrome-stable x11vnc fluxbox firefox
+          sudo apt-get install -y google-chrome-stable x11vnc fluxbox firefox cloudflared
           pip install cloudflared
 
       - name: Start VNC server
@@ -43,7 +43,8 @@ jobs:
       - name: Start Fluxbox
         run: |
           fluxbox &
-
+        env:
+          DISPLAY: :99
       - name: Start Cloudflared tunnel
         run: |
           cloudflared tunnel --url http://localhost:5900 &
