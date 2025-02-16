@@ -34,14 +34,30 @@ jobs:
         run: |
           sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           sudo apt update
-          sudo apt-get install google-chrome-stable
+          sudo apt-get install -y google-chrome-stable x11vnc fluxbox firefox-geckodriver
+          pip install cloudflared
+
+      - name: Start VNC server
+        run: |
+          x11vnc -display :99 -N -forever -shared &
+          echo "VNC server started on port 5900"
+
+      - name: Start Fluxbox
+        run: |
+          fluxbox &
+
+      - name: Start Cloudflared tunnel
+        run: |
+          cloudflared tunnel --url http://localhost:5900 &
+          sleep 10 # Wait for tunnel to be established
+          echo "Cloudflared tunnel started, VNC server accessible via the generated URL"
+
        
       - name: Install requirements   
         run: |
           python3 -m pip install --upgrade pip
-          pip3 install selenium requests beautifulsoup4 lxml asyncio aiohttp nest_asyncio cryptography pycryptodome argparse opencv-python
-      - name: Run
-        run: python3 ./run.py
+          pip3 install selenium requests beautifulsoup4 lxml asyncio aiohttp cryptography pycryptodome argparse opencv-python
+
       - name: Commit
         env:
           GIT_NAME: GitHub Actions[Bot]
