@@ -32,10 +32,11 @@ jobs:
         run: |
           sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           sudo apt update
-          sudo apt-get install -y google-chrome-stable x11vnc fluxbox firefox wget 
+          sudo apt-get install -y x11vnc fluxbox firefox wget 
           wget -q -nc https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64"
           mv cloudflared-linux-amd64 cloudflared
           chmod +x cloudflared
+          firefox
 
 
 
